@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*--responsive--*/
+@media (max-width:1200px) {
+	.ksf_banner{background:url(../images/girl-on-ipad.jpg) center center no-repeat!important; background-size:cover!important; background-attachment:fixed;}
+	.parallax-mirror {display: none;}
+
+
+}
+@media only screen and (min-device-width: 768px) and (max-device-width:1366px) and (orientation:landscape) {
+	.ksf_banner{background:url(../images/girl-on-ipad.jpg) center center no-repeat!important; background-size:cover!important; background-attachment:fixed;}
+	.parallax-mirror {display: none;}
+}
+
+@media screen and (max-width:1024px) {
+	
+
+	.bnr_text h1 {	font-size: 76px;	line-height: 95px;	letter-spacing: 17px; }
+	.bnr_text h2 {	font-size: 25px; }
+	
+	.ksf_a-txt p .color_tx { font-size: 18px; }
+	
+	.ksf_a-txt p {	font-size: 18px;	line-height: 30px; }
+	.ksf_th-box h3 {font-size: 48px; }
+	/*.tp_img-box img { width: 100%; }*/
+	.col-itm .tx_bx h4 {font-size: 16px; }
+	.col-itm .tx_bx p {font-size: 13px;	line-height: 19px; }
+	
+	.bg_d-t .lt_txt {	padding: 40px 30px; }
+	.bg_d-t .lt_txt p {	font-size: 14px; }
+	
+	.bg_d-t .tr_txt { padding: 40px 21px; }
+	
+	.bg_d-t .tr_txt p {font-size: 14px; }
+	
+	.smakprov h4 {	font-size: 36px; }
+	
+	.sma_bd-t {	width: 100%; padding: 36px 20px; }
+	
+	.vigger_sec h5 {font-size: 45px; padding: 0 0 100px 0; }
+	
+	.vi_bd .v_item { width: 33.33%;	min-height: 208px; }
+	
+	.vigger_sec {	padding: 100px 0; }
+	
+	
+	.ksf_footer a {	padding: 0 27px 0 0; }
+	.ft_rig li { font-size: 14px;	line-height: 14px;	padding: 0 10px; }
+
+	.ksf_rtxt {	padding: 100px 50px; }
+	.ksf_ltxt {	padding: 100px 61px; }
+	
+	.lt_box-sm h5 {	font-size: 15px;	line-height: 21px; }
+	
+	
+	.sm_t-ft ul li { padding: 10px 6px 0 0; }
+	
+	
+	.ns_lt-tx{margin: 0; padding: 0; }
+	.ns_lt-tx h5 {font-size: 39px; line-height: 45px;	}
+	.nyhet_bd {padding: 0 0 0 20px; box-sizing: border-box;}
+	.bott_nys-sec {width:320px; margin:49px auto 0 auto; position: absolute; right: 10%; }
+	
+	.logo_sec_inr{display:block;}
+	
+	.ksf_banner{background:url(../images/girl-on-ipad.jpg) center center no-repeat!important; background-size:cover!important; background-attachment:fixed;}
+	.parallax-mirror {display: none;}
+	
+	.logo_sec img {max-width: 180px;}
+	
+  }
+  
+ @media screen and (max-width:800px) {
+ 
+	.logo_sec img {max-width: 110px;}
+	.bott_nys-sec {width:320px; margin:49px auto 0 auto; position: absolute; right:28px; }
+	.smakprov h4 {font-size: 30px;}
+	
+  }
+  
+/*----*/
+@media screen and (max-width:767px) {
+
+	.lt_box-sm h5 {text-align:center }
+	.lt_box-sm p{text-align:center;}
+
+.bnr_text h1 {	font-size: 35px;	line-height: 36px;	letter-spacing: 8px; margin:0; }
+
+.bnr_text h2 {	font-size: 19px;	line-height: 21px;	text-align: center;	margin: 0 auto;	max-width: 240px; }
+
+.logo_sec ul li:first-child img { width:auto; }
+
+.logo_sec ul li img { width:100%; }
+
+.logo_sec ul li {	width: 100%;	height: auto;	display: inline-block;	margin: 0;	padding: 0 23px;
+	float: none; text-align: center;	margin: 0 0 29px 0; }
+
+.ksf_a-txt p br { display: none; }
+
+.ksf_th-box {padding: 60px 0 0 0 ; }
+
+
+.col-itm {	width: 100%;	float: none;	margin: 0;	padding: 43px 0 64px 0; }
+
+.bg_d-t .lt_txt {	width: 100%;	float: none;	padding: 74px 20px 62px 20px; margin:0 0 20px 0; }
+
+.bg_d-t .tr_txt {	width: 100%;	float: none;	padding: 74px 20px 62px 20px; }
+
+.ksf_bg { padding: 105px 0; }
+
+
+.bg_d-t {background-color:transparent; }
+.smakprov h4 {	font-size: 31px; }
+
+.sma_bd-t .lt_box-sm {	width: 100%;	padding: 0;	box-sizing: border-box;	float: none; }
+
+.sma_bd-t {	width: 100%;	padding: 50px 10px; }
+.sm_t-ft ul { text-align:center; }
+.sm_t-ft ul li {	display: inline-block;	float: none;	margin: 0 auto;	padding:15px 7px;	text-align: center; }
+.sm_t-ft ul li a { display:block; display:table; text-align:center; margin:0 auto; }
+.sma_bd-t .rt_box-sm {	margin: 20px 0 0 0;	float: none;	max-width: 200px; margin: 0 auto; }
+.vigger_sec h5 {	font-size: 21px;	padding: 0 0 27px 0;	line-height: 26px; }
+
+.vi_bd .v_item {width: 100%; min-height:auto; margin:0 0 10px 0; padding:20px 0; }
+
+.ksf_footer a {	display: block;	float: none;	margin: 0 auto;	padding: 0 60px 0 0;	text-align: center; }
+
+.ft_rig {	padding: 16px 0 0 0;	float: none; }
+
+.ft_rig li {	display: block;	margin: 0 auto;	padding: 0;	border-left: 0;	text-align: center; }
+
+.ksf_footer a{padding: 0;}
+.vigger_sec {padding: 25px 0; }
+.tp_img-box img {width: auto; }
+.parallax-slider[src="images/9886686-young-beautiful-hipster-woman.jpg"]{display:none!important;}
+
+
+
+
+
+
+/*-- new --*/
+.logo_sec img {	display: block;	padding: 0 0 20px 0;	width: auto;	text-align: center;	margin: 0 auto; }
+.logo_sec_inr {display: table;	text-align: center; }
+.logo_sec {	padding:50px 0 20px 0; }
+
+.ksf_atxt_wrapper {	padding: 40px 0;}
+
+.ksf_atxt p { font-size: 17px; line-height: 25px; }
+.ksf_th-box h3 {	font-size: 25px;	line-height: 18px;	padding: 0 0 33px 0;	letter-spacing: 0; }
+.ksf_bgmain { display: block; }
+
+.ksf_ltxt {	width: 100%;	font-size: 18px;	line-height: 26px;	padding: 50px 10px; }
+
+
+.ksf_rtxt {	width: 100%; font-size: 18px;	line-height: 26px;	padding: 50px 10px; }
+.ns_lt-tx {	width: 100%;	float: none; padding:0 10px; }
+
+.ns_lt-tx h5 {font-size: 27px;	line-height: 32px;	float: none;text-align: center;}
+.nyhet_bd {padding: 0;}
+.ns_lt-tx p{text-align:center;}
+
+.top_nys-sec ul li {	display:block;	margin: 0 auto;	padding:10px 0;	width: 100%;	text-align: center; }
+.top_nys-sec ul li a { display:block; text-align:center; margin:0 auto; }
+.ns_rt-tx {	width: 100%; float: none; }
+.bott_nys-sec {	width: 100%;	margin: 18px 0 0 0;	right: 0;	position: static; }
+.ksf_atxt {	padding: 0 13px; }
+
+.smakprov {	padding: 40px 0; }
+.smakprov h4 {	padding: 0 0 14px 0;  text-align:center;}
+
+.nyhet-but-coll {	display: none; }
+
+
+.nyhets_ft ul li {	padding: 10px 0 10px 40px; }
+.vi_bd .v_item p a {	padding: 10px 0; }
+
+.vi_bd .v_item {padding: 30px 0; }
+
+.sm_t-ft .bt_bl {	float: none; }
+
+
+
+.ksf_bg_wrapper { padding:0; background:#838281;	}
+
+.sma_bd-t .rt_box-sm {	margin: 0 auto 20px auto; }
+
+
+.sm_t-ft ul li:nth-child(3) {
+	padding: 7px;
+	float: none;
+}
+
+
+/*-- new --*/
+.bnr_text a {padding: 2px 45px;}
+
+.mobile_only{display:block;}
+.desktop_only{display:none;}
+.nyh-bot-but {
+	padding:25px 0 0 0;
+}
+.nyhetsappen {
+	padding: 20px 0 30px 0;
+}
+.bott_nys-sec img {
+	width: 60%;
+}
+}
+
+
+
+
+/*-- --*/
+@media screen and (max-width:500px) {
+
+.sma_bd-t .rt_box-sm {	float: none;	width: 100%;	margin: 0 auto 20px auto; }
+
+
+
+
+
+
+
