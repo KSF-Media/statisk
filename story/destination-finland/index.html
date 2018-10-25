@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta property="og:title" content="Hbl.fi | Destination Finland"/>
+	<meta property="og:image" content="https://story.hbl.fi/destination-finland/epa-ungern-h_52194567.jpg"/>
+	<meta property="og:site_name" content="Hbl.fi"/>
+	<meta property="og:description" content="Mosul, juli, 2015. Bara två dagar innan avresan beslutar sig Mohammed för att destinationen ska bli Finland. Hustrun Zainab, nio månader gamla Rand och yngsta brodern Yazen tvekar bara lite innan de beslutar att åka med honom. Så inleds resan mot landet som ligger 4 000 kilometer längre bort. De vet att där är fred, att skolan och hälsovården är bra och att vintrarna kan vara stränga." />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HBL Story - Destination Finland</title>
+	<meta name="author" content="HBL" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+
+
+	@font-face {
+	font-family: 'DuplexSerif';
+	src: url('fonts/DuplexSerif-Regular.eot');
+	src: url('fonts/DuplexSerif-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/DuplexSerif-Regular.woff') format('woff'),
+		url('fonts/DuplexSerif-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans';
+		src: url('fonts/DuplexSans-Bold.eot');
+		src: url('fonts/DuplexSans-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Bold.woff') format('woff'),
+			url('fonts/DuplexSans-Bold.ttf')  format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans';
+		src: url('fonts/DuplexSans-Light.eot');
+		src: url('fonts/DuplexSans-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Light.woff') format('woff'),
+			url('fonts/DuplexSans-Light.ttf')  format('truetype');
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSerif';
+		src: url('fonts/DuplexSerif-Bold.eot');
+		src: url('fonts/DuplexSerif-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSerif-Bold.woff') format('woff'),
+			url('fonts/DuplexSerif-Bold.ttf')  format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans';
+		src: url('fonts/DuplexSans-Black.eot');
+		src: url('fonts/DuplexSans-Black.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Black.woff') format('woff'),
+			url('fonts/DuplexSans-Black.ttf')  format('truetype');
+		font-weight: 900;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans-Semi';
+		src: url('fonts/DuplexSans-Semibold.eot');
+		src: url('fonts/DuplexSans-Semibold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Semibold.woff') format('woff'),
+			url('fonts/DuplexSans-Semibold.ttf')  format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSerif';
+		src: url('fonts/DuplexSerif-Light.eot');
+		src: url('fonts/DuplexSerif-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSerif-Light.woff') format('woff'),
+			url('fonts/DuplexSerif-Light.ttf')  format('truetype');
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans';
+		src: url('fonts/DuplexSans-Regular.eot');
+		src: url('fonts/DuplexSans-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Regular.woff') format('woff'),
+			url('fonts/DuplexSans-Regular.ttf')  format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	body {
+		background-color: black;
+	}
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-family: "DuplexSans";
+		font-weight: normal;
+		font-style: normal;
+		color: #fff;
+	}
+
+	p {
+		font-family: "DuplexSans";
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.text h1{
+		position: absolute;
+		font-size: 2em;
+		font-family: "DuplexSans";
+		color: #fff;
+		padding:20px 50px 20px 50px;
+		margin: 0 0 0 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		bottom: 0;
+		z-index: 100;
+	}
+
+	.maintitle p {
+		position: relative;
+		font-weight: 100;
+		color: white;
+		text-align: left;
+		text-size: 0.5em;
+		padding:0px 50px 20px 50px;
+
+	}
+
+	.maintitle h1{
+		position: relative;
+		font-size: 5em;
+		font-family: "DuplexSans";
+		font-weight: bold;
+		font-style: normal;
+		background-color: rgba(0, 0, 0, 0.0);
+		top: 60%;
+		padding:20px 40px 20px 50px;
+	}
+
+	.onlytext h1{
+		font-family: "DuplexSerif";
+		font-size: 2em;
+		position: absolute;
+		padding:20px 50px 20px 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		color: black;
+		display: none;
+	}
+
+	.musicinfo {
+		font-family: "DuplexSerif";
+		font-size: 0.5em;
+		position: absolute;
+		padding:20px 50px 20px 50px;
+		margin-top: 10%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		color: white;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:left;
+		overflow: hidden;
+	}
+
+	#video1, #video2{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	#section0 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 60%;
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section0{
+		overflow: hidden;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	.title-wrapper {
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		height: 56px;
+	}
+
+	.title {
+		float:left;
+		position: relative;
+		padding: 16px 10px 0 10px;
+		color: white;
+		background-color: rgba(0, 0, 0, 0.5);
+		white-space: nowrap;
+		font-size: 0.7em;
+		width: auto;
+		height: 40px;
+		display: none;
+	}
+
+	.logo {
+		float: left;
+		position: relative;
+		background-color: orange;
+		height: 100%;
+	}
+
+	.logo-img {
+		margin: 14px 5px 0px 5px;
+
+	}
+
+	.fullpage-wrapper {
+		margin-top: 0;
+	}
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+		background-position:center center;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/epa-ungern-h_52194567.jpg);
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+
+	#section1{
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+
+	#section2{
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section3{
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section4{
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section5{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/familjen-ny.jpg);
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section6{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bebissover.jpg);
+		padding: 0 0 0 0;
+	}
+	#section7{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg1.jpg);*/
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+
+	#section8{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/rakarsig.jpg);
+		padding: 0 0 0 0;
+	}
+	#section9{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section10{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/piknik.jpg);
+		padding: 0 0 0 0;
+	}
+	#section11{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/loppis1.jpg);
+		padding: 0 0 0 0;
+	}
+	#section12{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/loppis2.jpg);
+		padding: 0 0 0 0;
+	}
+
+	#section13{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+
+	#section14{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+
+	#section15{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/europa-rutter-ny.png);
+		padding: 0 0 0 0;
+	}
+
+	#section16{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/finland-rutter-nyny.png);
+		padding: 0 0 0 0;
+	}
+
+	#section17{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+
+	#section18{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/silhuettbild.jpg);
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+
+	#section19{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section20{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/skottskada.jpg);
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section21{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section22{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/sovsal.jpg);
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section23{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section24{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: #000000 !important;
+		padding: 0 0 0 0;
+		color: white;
+	}
+	#section25{
+		/*background-image: url(https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/bg4.jpg);*/
+		background-color: black !important;
+		padding: 0 0 0 0;
+	}
+	#section25 p{
+		position: relative;
+		font-weight: 100;
+		color: white;
+		text-align: left;
+		text-size: 0.5em;
+		padding:0px 50px 20px 50px;
+	}
+
+	@media only screen and (max-width: 500px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    h1, p { font-size: 2em; }
+    .maintitle h1{
+		font-size: 3em;
+		font-family: "DuplexSans";
+		font-weight: bold;
+		background-color: rgba(0, 0, 0, 0.1);
+		top: 60%;
+		padding:20px 20px 20px 50px;
+
+	}
+
+}
+
+	#fp-nav {
+		background-color:rgba(255, 255, 255, 0.25);
+		border-radius: 50px;
+	}
+
+	#fp-nav ul li a span, .fp-slidesNav ul li a span {
+		background: orange;
+		box-shadow: #000000;
+	}
+
+	.turndevice {
+		display: none;
+		position: absolute;
+		z-index: 100;
+		background-color: orange;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding-top: 50%;
+	}
+
+	.turndevice img {
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var vid = document.getElementById("video1");
+			var vid2 = document.getElementById("video2");
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				sectionsColor: ['#f1f1f1', '#f1f1f1', '#f1f1f1'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				css3: true,
+				scrollingSpeed: 700,
+
+
+				onLeave: function(index, nextIndex, direction){
+					//console.log(index, nextIndex);
+					if(index == 1) {
+						$('.title').fadeIn(300);
+					} 					else if(nextIndex == 1) {
+						$('.title').fadeOut(300);
+					}
+					// Pause video when moving from slide 4
+					if(index == 4) {
+						vid.pause();
+					} // Play video when moving to slide 4
+					else if(nextIndex == 4) {
+						vid.play();
+					}
+
+					// Pause video2 when moving from slide 25
+					if(index == 25) {
+						vid2.pause();
+					} // Play video2 when moving to slide 25
+					else if(nextIndex == 25) {
+						vid2.play();
+					}
+
+					$('.onlytext h1').fadeOut(300);
+					setTimeout(function() {
+						$('#section'+(nextIndex-1)+'.onlytext h1').fadeIn(1000);
+					} , 200);
+    		},//onLeave END
+
+    		afterLoad: function(anchorLink, index){
+					// Nada
+				},
+
+				afterRender: function(){
+					// Nada
+				}
+			});
+		});
+	</script>
+
+	<script>
+
+		function checkForPortrait(){
+			if(window.orientation == 0 || window.orientation == 180) { // Portrait
+			    $(".turndevice").css({"display":"block","position":"absolute","height":"100%","width":"100%","font-size":"300%"});
+			  }
+			  else { // Landscape
+			  	$(".turndevice").css({"display":"none"});
+  			}
+		}
+
+		$(window).on("orientationchange",checkForPortrait);
+		$(document).ready(checkForPortrait);
+
+	</script>
+
+</head>
+<body>
+
+<div class="turndevice">
+	<img src="https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/rotatedevice.png" alt="Rotate Device" style="width:auto;height:auto;">
+</div>
+
+<div class="title-wrapper">
+	<div class="logo">
+			<a href="https://www.hbl.fi"><img class="logo-img" src="https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/HBL_logo.png"></a>
+		</div>
+	<div class="title">
+		<p>Destination: Finland</p>
+	</div>
+</div>
+
+<div id="fullpage">
+
+	<div class="section text" id="section0">
+		<div class="layer maintitle">
+			<h1>Destination: Finland</h1>
+			<p>Ett reportage av Jeanette Björkqvist och Karl Vilhjálmsson</p>
+		</div>
+	</div>
+
+	<div class="section onlytext" id="section1"><h1>Mosul, juli, 2015. Bara två dagar innan avresan beslutar sig Mohammed för att destinationen ska bli Finland. Hustrun Zainab, nio månader gamla Rand och yngsta brodern Yazen tvekar bara lite innan de beslutar att åka med honom. Så inleds resan mot landet som ligger 4 000 kilometer längre bort. De vet att där är fred, att skolan och hälsovården är bra och att vintrarna kan vara stränga.</h1></div>
+
+	<div class="section onlytext" id="section2"><h1>Med sig tar de tre ryggsäckar med det mest nödvändiga: kläder, dokument, telefoner, laddare och pengar. Men när den överfulla gummibåten mellan Turkiet och Grekland börjar läcka slängs några av väskorna i panik överbord. I dem finns så gott som alla kläder, en del av pengarna och alla dokument. Utan byteskläder tar de sig genom Europa. Etapperna genom Makedonien och Ungern blir de tyngsta.</h1></div>
+
+	<div class="section " id="section3">
+		<video loop controls id="video1">
+			<source src="https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/Makedonien.mp4">
+			<!--<source src="https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/flyktingar_makedonien_720.webm" type="video/webm">-->
+		</video>
+	</div>
+
+	<div class="section onlytext" id="section4"><h1>I stort sett tomhänta anländer familjen i början av augusti till ett Finland där sensommarens asylrusch redan hunnit sätta systemet helt ur spel.
+</h1></div>
+
+	<div class="section text" id="section5"></div>
+
+
+	<div class="section text" id="section6"><h1>En dryg månad efter ankomsten flyttas hela familjen till ett litet rum på ett nedslitet hotell i utkanten av Tattarmossens industriområde i Helsingfors. Här väntar mamma, pappa, farbror och lilla Rand på besked om sin framtid.</h1></div>
+
+	<div class="section onlytext" id="section7"><h1>Var den mödosamma resan värd priset, tusentals euro per person? Var det värt att fly ett välbärgat hem i Mosul för att landa tomhänta i ett kaotiskt system som knappt klarar av att hantera alla de tusentals andra som också anlänt? Yazen, 21, är nästan säker på att det var värt det. I Mosul har han bevittnat Islamiska statens offentliga avrättningar, varit skräckslagen, gömt sig. Men det värsta, säger han, är den förnedring som både IS och andra beväpnade grupperingar utsätter invånarna för. Situationerna där maktfullkomliga män gör klart för dig att du inte är värd någonting.</h1></div>
+
+	<div class="section text" id="section8"><h1>Islamska staten kuvar folket med hot om offentliga straff och våld för den som inte lyder. Kvinnor tvingas dölja sig med heltäckande niqab, män förbjuds att raka skägget.</h1></div>
+
+	<div class="section onlytext" id="section9"><h1>Tomheten, ovissheten. Trots ett liv i konflikternas skugga kommer Mohammeds familj från välbärgade förhållanden där utbildning värderas högt. Men när de sitter i ett litet hotellrum i ett främmande land räknar ingen längre med deras bakgrund. Nu är de tre vuxna och ett barn bland tusentals andra nödställda som alla har sina egna berättelser och egna motiv för att vara i Finland. Det är svårt att vara tomhänt. Och det är med stor blygsamhet de tvingas ta emot donationer med det mest nödvändiga som behövs för att kunna börja bygga upp en ny vardag.</h1></div>
+
+	<div class="section text" id="section10"><h1>Ganska snart efter ankomsten till Helsingfors blir Mohammed kontaktad av en landsman som redan bor i Finland och vill hjälpa dem. En dag förser vännen familjen med hemlagad traditionell vinbladsdolma – i brist på ett eget kök avnjuts rätten i en igenvuxen backe intill deras tillfälliga hem.</h1></div>
+
+	<div class="section text" id="section11"><h1>Familjen försöker ersätta alla förlorade och kvarlämnade kläder genom fynd på loppmarknader och på flyktingförläggningarnas donationsbord.</h1></div>
+
+	<div class="section text" id="section12"><h1>Än en gång visar Finland sin bättre sida då Sandvikens handlare inser att Mohammed och hans familj är asylsökande. Flera personer donerar kläder till Zainab och Rand.</h1></div>
+
+	<div class="section onlytext" id="section13"><h1>Helsingfors, september, 2015. Nu väntar familjen, likt tusentals andra asylsökande från olika länder, på vad som ska hända. De fem dagarna på hotellet har redan hunnit bli nästan två veckor och försöken att inkvartera sig hos Mohammeds vän har än så länge misslyckats. Snart två månader efter sin ankomst vet familjen ingenting om framtiden men åtminstone verkar alla de inskannade dokument Mohammed fick med sig ha övertygat polisen om att familjen faktiskt är från Mosul, en central detalj då deras ärende någon gång inom det närmaste året avgörs av Migrationsverket.</h1></div>
+
+	<div class="section onlytext" id="section14"><h1>Fram till 23 september har över 14 300 asylsökande registrerat sig i Finland och man räknar med att de blir minst lika många till innan året är slut, trots de övervakningsåtgärder som nu vidtas mot gränserna vid Sverige och södra Europa. Av de asylsökande är en övervägande del från olika delar av Irak – 64 procent – och bakom sig har de långa och dyra resor genom en rad europeiska länder.</h1></div>
+
+	<div class="section text" id="section15"><h1>Flyktingarnas rutter till Europa</h1></div>
+
+	<div class="section text" id="section16"><h1>Flyktingarnas rutter till Finland</h1></div>
+
+	<div class="section onlytext" id="section17"><h1>Mohammed kom med fru, barn och lillebror. Många, många fler har valt att låta en man från familjen resa i väg, många gånger i tron att han har bäst förutsättning att överleva resan och därefter ta familjen till tryggheten. Av de asylsökande i Europa, och Finland, är kring 70 procent män. Bland dem har det florerat livliga berättelser om paradiset Finland – landet som är generösare än Sverige med att bevilja asyl till särskilt irakier, och landet där ens ärende prövas i snabb ordning.
+Men i motsats till vad många tror finns det ingen automatik i hur Finland avgör irakiernas sak. Och framför allt finns det ingen genväg för dem som trodde att familjen snart ska få följa efter.</h1></div>
+
+	<div class="section text" id="section18"><h1>För de här irakierna, två av dem pappor, kommer det som en chock att beskedet om asyl, eller ett avslag på ansökan, med högsta sannolikhet kan dröja närmare ett år och en eventuell familjeåterförening lika länge till.</h1></div>
+
+	<div class="section onlytext" id="section19"><h1>Det var inte så Finland presenterades för dem, av de egna landsmännen och av de smugglare de mött på sin väg genom Europa. De falska förhoppningarna om ett generöst land med snabba processer har börjat klarna de senaste dagarna och resultatet har varit att en del av dem som kommit har dragit tillbaka sin asylansökan. De fem män vi träffar, som av säkerhetsskäl väljer att vara anonyma, kommer alla från Bagdad och frågan om vad de ska göra nu lämnar dem tysta. Två har familjer i hemlandet som väntar på att räddas men kan de vänta nästan två år till? Eller borde männen återvända till ett osäkert irakiskt samhälle, när de precis satsat betydande resurser på att fly det?
+Hur de än gör så är konflikterna ständigt närvarande i många delar av Irak.</h1></div>
+
+	<div class="section text" id="section20"><h1>Den här 26-åriga före detta polisen, som arbetade med en av landets ministrar, kände bokstavligen av osäkerheten när hans axel för ett drygt år sedan genomborrades av ett skott. På röntgenbilderna syns moln av splitter som kulexplosionen lämnade efter sig.</h1></div>
+
+	<div class="section onlytext" id="section21"><h1>Finlands bedömning har varit att de norra och södra delarna av Irak är trygga områden. De områden som ligger mellan dem har än så länge ansetts vara sådana att man inte kan återbörda människor dit. Hit hör bland annat Bagdad, Babylons län och Nineve.
+Så sent som i april i år tog en omfattande rapport från Migrationsverket ställning till situationen i specifikt Bagdad, där man målar upp en betydligt mera komplex bild av Irak än endast Islamiska statens framfart. Vid sidan av IS dras Irak med gamla motsättningar som går tillbaka till Saddam Husseins styre och inbördeskriget som rasade efter att han störtats av USA. Migris rapport talar om flera olika beväpnade grupperingar som med lite olika agendor, många av dem våldsamma, särskilt riktat in sig på att förtrycka landets sunnimuslimer.</h1></div>
+
+	<div class="section text" id="section22"><h1>Hur ödet för de tusentals asylsökandena kommer att se ut vet ingen än, för besluten lär dröja betydligt längre än genomsnittliga sex månader. Under tiden arbetar staten för fullt för att lätta på trycket i de överbelastade flyktinganläggningarna. Mustafa från Irak tvingas dela golvplats med tiotals andra som inte kunnat få en egen säng.</h1></div>
+
+	<div class="section onlytext" id="section23"><h1>Asylsituationen prövar inte bara Finland, utan hela Europa. Försöken att motarbeta människornas färd genom Europa har än så länge inte gett andra resultat än en utbredd polariserad debatt kring hur, om alls, alla de som söker sig till EU:s länder kan hjälpas.
+Medan invånare demonstrerar för sina åsikter och medan beslutsfattare möts för att komma fram till lösningar fortsätter tiotusentals människor ta sig genom EU:s övervakning, i jakten på ett nytt liv. Inte för att de vill, säger många av dem vi träffar, utan för att de måste om de ska överleva.</h1></div>
+
+	<div class="section" id="section24">
+		<video loop controls id="video2">
+			<source src="https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/flyktingar_webb_720.mp4">
+			<!--<source src="https://storage.cloud.google.com/ksf-story-assets/destination-finland/imgs/flyktingar_makedonien_720.webm" type="video/webm">-->
+		</video>
+	</div>
+
+	<div class="section onlytext" id="section25"><p>
+Text <strong>Jeanette Björkqvist</strong><br>
+Bild <strong>Karl Vilhjálmsson</strong><br>
+Assistent <strong>Osama Alaloulou</strong><br>
+Grafik & planering <strong>Maija Hurme</strong><br>
+Utveckling & design <strong>Måns Eklund</strong><br>
+Videoeditering <strong>Richard Nordgren</strong></p>
+
+<div class="musicinfo" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" about="http://freemusicarchive.org/music/Audiobinger/Open_Road_Music_Vol1/"><span property="dct:title">Open Road Music Vol.1</span> (<a rel="cc:attributionURL" property="cc:attributionName" href="http://www.audiobinger.com/">Audiobinger</a>) / <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div>
+
+	</div>
+
+
+
+
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74818-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
