@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HBL Story</title>
+	<meta name="author" content="HBL" />
+	<meta name="description" content="Drömmen om OS" />
+	<meta name="keywords"  content="HBL Story, Hufvudstadsbladet, Drömmen om OS" />
+	<meta name="Resource-type" content="Document" />
+
+	<meta property="og:title" content="Drömmen om OS"/>
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="https://story.hbl.fi/drommen-om-os/"/>
+	<meta property="og:image" content="https://story.hbl.fi/drommen-om-os/imgs/470-11.jpg"/>
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var vid = document.getElementById("video1");
+			var vid2 = document.getElementById("video2");
+
+			var timer;
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				sectionsColor: ['#f1f1f1', '#f1f1f1', '#f1f1f1'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				css3: true,
+				scrollingSpeed: 700,
+				slidesNavigation: true,
+
+				onLeave: function(index, nextIndex, direction){
+					if(index == 1) {
+						$('.title').fadeIn(300);
+					} 					else if(nextIndex == 1) {
+						$('.title').fadeOut(300);
+					}
+					// Pause video when moving from slide 3
+					if(index == 3) {
+						vid.pause();
+					} // Play video when moving to slide 3
+					else if(nextIndex == 3) {
+						vid.play();
+					}
+
+					// Pause video2 when moving from slide 4
+					if(index == 7) {
+						vid2.pause();
+					} // Play video2 when moving to slide 4
+					else if(nextIndex == 7) {
+						vid2.play();
+					}
+
+
+
+					$('.onlytext h1').fadeOut(300);
+					setTimeout(function() {
+						$('#section'+(nextIndex-1)+'.onlytext h1').fadeIn(1000);
+					} , 200);
+
+					var now = new Date().getTime();
+					var duration = Math.ceil( (now - timer)/1000 );
+					ga('send', 'event', 'Story-Spraka', 'Section visited', 'Section '+index, duration);
+    		},//onLeave END
+
+    		afterLoad: function(anchorLink, index){
+					timer = new Date().getTime();
+				},
+
+				afterRender: function(){
+					// Nada
+				},
+
+				onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+					var now = new Date().getTime();
+					var duration = Math.ceil( (now - timer)/1000 );
+					ga('send', 'event', 'Story-Spraka', 'Slide visited', 'Section '+index+' - Slide '+slideIndex, duration);
+				},
+
+				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+					timer = new Date().getTime();
+				}
+			});
+		});
+	</script>
+
+	<script>
+
+		function checkForPortrait(){
+			if(window.orientation == 0) { // Portrait
+			    $(".turndevice").css({"display":"block","position":"absolute","height":"100%","width":"100%","font-size":"300%"});
+			  }
+			  else { // Landscape
+			  	$(".turndevice").css({"display":"none"});
+  			}
+		}
+
+		$(window).on("orientationchange",checkForPortrait);
+		$(document).ready(checkForPortrait);
+
+	</script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-74818-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<script type="text/javascript" src="functions.js"></script>
+</head>
+
+<body>
+
+<!--<div class="facebooksharepic">
+	<img src="https://storage.cloud.google.com/ksf-story-assets/drommen-om-os/imgs/svenska1.jpg" alt="Rotate Device" style="width:auto;height:auto;">
+</div>-->
+
+<div class="turndevice">
+	<img src="https://storage.cloud.google.com/ksf-story-assets/drommen-om-os/imgs/rotatedevice.png" alt="Rotate Device" style="width:auto;height:auto;">
+</div>
+
+<div class="title-wrapper">
+	<div class="logo">
+			<a href="https://www.hbl.fi"><img class="logo-img" src="https://custom.hbl.fi/logotyper/hbl/svg/HBL-black-platta.svg"></a>
+	</div>
+
+	<div class="title">
+		<p>Drömmen om OS</p>
+	</div>
+</div>
+
+<div class="socialbuttons">
+	<a href="https://twitter.com/home?status=https://story.hbl.fi/drommen-om-os/" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+	<a href="https://www.facebook.com/sharer/sharer.php?u=https://story.hbl.fi/drommen-om-os/" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a></div>
+
+<div id="fullpage">
+
+	<div class="section text" id="section0">
+		<div class="layer maintitle">
+			<h1>Drömmen om OS</h1>
+			<!--<p>Ett reportage av Markus West och Leif Weckström</p>-->
+		</div>
+	</div>
+
+	<div class="section onlytext" id="section1">
+		<h1><strong>Nu gäller det</strong><br><br>470-duon Mikaela Wulff och Niki Blässar drömmer om att segla i OS 5–21 augusti. För att ta sig till Rio de Janeiro måste duon nå framgångar i regattan i Palma de Mallorca.</h1>
+	</div>
+
+	<div class="section onlytext" id="section2"><video controls id="video1">
+			<source src="https://storage.cloud.google.com/ksf-story-assets/drommen-om-os/imgs/seglare_vattnet.mp4">
+		</video></div>
+
+	<div class="section onlytext" id="section3"></div>
+
+	<div class="section onlytext" id="section4">
+		<h1><strong>Mikaela Wulff</strong>,<small> 25, bor i Munksnäs.<br>
+
+<strong>Bakgrund som seglare:</strong> Sommarseglatser som liten flicka med familjen och optimistkurser. Bestämmer sig för seriös kappsegling vid 13.<br>
+
+<strong>Meriter:</strong> Brons i OS i London 2012 i Match Race, samma år guld i VM i Göteborg.<br>
+
+<strong>Gör på fritiden:</strong> Cyklar, klättrar, dansar och lagar thaimat.<br>
+
+<strong>Vill göra i framtiden:</strong> Jobba som företagare. Inleder i vår studier i Haaga-Helia med inriktningen, från toppidrottare till företagare.</small>
+<br><br>
+
+<strong>Niki Blässar</strong>,<small> 21, hemmet ligger på Björnsö, pojkvännen finns i Stockholm.<br>
+
+<strong>Bakgrund som seglare:</strong> Grunder i kappsegling på optimistkurser men lärt sig även av far och farfar som båda varit aktiva seglare.<br>
+
+<strong>Meriter:</strong> Silver i Laser Radial i VM 2013 för unga under 21.<br>
+
+<strong>Gör på fritiden:</strong> Chillar helst med kompisar efter dagens träningsrutiner på 12 timmar.<br>
+
+<strong>Vill göra i framtiden:</strong> ”Studera och sedan ha jobb där jag kan utnyttja mina färdigheter från seglande och träningar som multitasker.”</small>
+
+</h1>
+	</div>
+
+		<div class="section onlytext" id="section5">
+			<h1><strong>Det här visste du inte:</strong><br><br>
+<strong>1.</strong> Att finlandssvenska Wulff och Blässar pratar finska med varandra: <i>”Det blev bara så för alla träningar går antingen på finska eller engelska”</i>.<br><br>
+<strong>2.</strong> Att de önskar sig hårda vindar under regattan på Mallorca. <i>”Vi är som bäst när det blåser riktigt ordentligt”</i>.</h1>
+
+		</div>
+
+		<div class="section onlytext" id="section6"><video controls id="video2">
+			<source src="https://storage.cloud.google.com/ksf-story-assets/drommen-om-os/imgs/Segling_gymnastik.mp4">
+		</video></div>
+
+	<div class="section onlytext" id="section7">
+		<h1><strong>Spänningen stiger</strong><br><br>
+Vägen till OS är lång och pressen på Mikaela Wulff och Niki Blässar hård inför regattan i Palma. Den 4 april vet vi om de har lyckats säkra en nationsplats som skulle ge dem rätt att representera Finland i Rio de Janeiro sommar.</h1>
+	</div>
+
+<div class="section onlytext" id="section8"><p>
+Text <strong>Filip Saxén & Nina Weckström</strong><br>
+Foto & video <strong>Leif Weckström</strong><br>
+Planering & editering <strong>Marita Granroth</strong><br>
+Utveckling & design <strong>Måns Eklund</strong><br>
+Videoeditering <strong>Richard Nordgren</strong></p>
+
+
+	</div>
+
+
+
+
+</div>
+</body>
+</html>
