@@ -1,0 +1,597 @@
+8@CHARSET "ISO-8859-1";
+
+	@font-face {
+	font-family: 'DuplexSerif';
+	src: url('fonts/DuplexSerif-Regular.eot');
+	src: url('fonts/DuplexSerif-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/DuplexSerif-Regular.woff') format('woff'),
+		url('fonts/DuplexSerif-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans';
+		src: url('fonts/DuplexSans-Bold.eot');
+		src: url('fonts/DuplexSans-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Bold.woff') format('woff'),
+			url('fonts/DuplexSans-Bold.ttf')  format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans';
+		src: url('fonts/DuplexSans-Light.eot');
+		src: url('fonts/DuplexSans-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Light.woff') format('woff'),
+			url('fonts/DuplexSans-Light.ttf')  format('truetype');
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSerif';
+		src: url('fonts/DuplexSerif-Bold.eot');
+		src: url('fonts/DuplexSerif-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSerif-Bold.woff') format('woff'),
+			url('fonts/DuplexSerif-Bold.ttf')  format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans';
+		src: url('fonts/DuplexSans-Black.eot');
+		src: url('fonts/DuplexSans-Black.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Black.woff') format('woff'),
+			url('fonts/DuplexSans-Black.ttf')  format('truetype');
+		font-weight: 900;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans-Semi';
+		src: url('fonts/DuplexSans-Semibold.eot');
+		src: url('fonts/DuplexSans-Semibold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Semibold.woff') format('woff'),
+			url('fonts/DuplexSans-Semibold.ttf')  format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSerif';
+		src: url('fonts/DuplexSerif-Light.eot');
+		src: url('fonts/DuplexSerif-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSerif-Light.woff') format('woff'),
+			url('fonts/DuplexSerif-Light.ttf')  format('truetype');
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'DuplexSans';
+		src: url('fonts/DuplexSans-Regular.eot');
+		src: url('fonts/DuplexSans-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/DuplexSans-Regular.woff') format('woff'),
+			url('fonts/DuplexSans-Regular.ttf')  format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	/* PROGRESS BAR */
+	
+	@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
+	*, *::after, *::before {
+	  box-sizing: border-box;
+	}
+	
+	progress {
+	  /* Positioning */
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  z-index: 100;
+	
+	  /* Dimensions */
+	  width: 100%;
+	  height: .40em;
+	
+	  /* Reset the apperance */  
+	  -webkit-appearance: none;
+	     -moz-appearance: none;
+	          appearance: none;
+	
+	  /* Get rid of the default border in Firefox/Opera. */
+	  border: none;
+	
+	  /* For Firefox/IE10+ */
+	  background-color: transparent;
+	
+	  /* For IE10+, color of the progress bar */
+	  color: orange;
+	}
+	
+	progress::-webkit-progress-bar {
+	  background-color: transparent;
+	}
+	
+	.flat::-webkit-progress-value {
+	  background-color: orange;
+	}
+	
+	.flat::-moz-progress-bar {
+	  background-color: orange;
+	}
+	
+	.single::-webkit-progress-value {
+	  background-color: transparent;
+	  background-image: -webkit-linear-gradient(left, transparent, red);
+	}
+	
+	.single::-moz-progress-bar {
+	  background-color: transparent;
+	  background-image: -moz-linear-gradient(left, transparent, red);
+	}
+	
+	.multiple::-webkit-progress-value {
+	  background-image: -webkit-linear-gradient(-45deg, 
+	                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                               rgba(0,0, 0, .1) 66%, transparent 66%),
+	                      -webkit-linear-gradient(left, green, red);
+	}
+	
+	.multiple::-moz-progress-bar {
+	  background-image: -moz-linear-gradient(-45deg, 
+	                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                               rgba(0,0, 0, .1) 66%, transparent 66%),
+	                      -moz-linear-gradient(left, green, red);
+	}
+	
+	.progress-container {
+	  width: 100%;
+	  background-color: transparent;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: .25em;
+	  display: block;
+	}
+	
+	.progress-bar {
+	  background-color: red;
+	  width: 50%;
+	  display: block;
+	  height: inherit;
+	}
+
+	body {
+		background-color: #f1f1f1;
+	}
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-family: "DuplexSans";
+		font-weight: normal;
+		font-style: normal;
+		color: #fff;
+	}
+
+	p {
+		font-family: "DuplexSans";
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.text h1{
+		position: absolute;
+		font-size: 2em;
+		font-family: "DuplexSans";
+		font-weight: 100;
+		color: #fff;
+		padding:20px 50px 20px 50px;
+		margin: 0 0 0 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		bottom: 10%;
+		z-index: 100;
+	}
+
+	.maintitle p {
+		position: relative;
+		font-weight: 100;
+		color: white;
+		text-align: left;
+		text-size: 0.5em;
+		padding:0px 50px 20px 50px;
+
+	}
+
+	.maintitle h1{
+		position: relative;
+		font-size: 5em;
+		font-family: "DuplexSans";
+		font-weight: bold;
+		font-style: normal;
+		background-color: rgba(0, 0, 0, 0.0);
+		top: 60%;
+		padding:20px 40px 20px 50px;
+	}
+
+	.onlytext h1{
+		font-family: "DuplexSerif";
+		font-size: 2em;
+		position: relative;
+		padding:20px 50px 20px 50px;
+		top: 70px;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		color: black;
+		display: none;
+		text-fill-color: black;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:left !important;
+		overflow: hidden;
+	}
+
+	#video1, #video2, #video3{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	#section0 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 20%;
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section0{
+		overflow: hidden;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	.title-wrapper {
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		height: 56px;
+	}
+
+	.title {
+		float:left;
+		position: relative;
+		padding: 16px 10px 0 10px;;
+		color: white;
+		background-color: rgba(0, 0, 0, 0.5);
+		white-space: nowrap;
+		font-size: 0.7em;
+		width: auto;
+		height: 56px;
+		display: none;
+	}
+	
+	.title p {
+		font-weight: 100;
+	}
+
+	.logo {
+		float: left;
+		position: relative;
+		background-color: orange;
+		height: 100%;
+	}
+
+	.logo-img {
+		margin: 15px 10px 0px 10px;
+		height: 22px;
+
+	}
+
+	.fullpage-wrapper {
+		margin-top: 0;
+	}
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+		background-position:center center;
+	}
+
+	.slide{
+		background-size: cover;
+		background-position:center center;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/1.jpg);
+		background-color: #f1f1f1 !important;
+		background-size: cover !important;
+		background-position:center center !important;
+		padding: 0 0 0 0;
+	}
+
+	#section1{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/2.jpg);
+		/*background-color: #f1f1f1 !important;*/
+		padding: 0 0 0 0;
+	}
+
+	#section2{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/3.jpg);
+		padding: 0 0 0 0;
+	}
+	#section3{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/4.jpg);
+		padding: 0 0 0 0;
+	}
+	#section4{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/5.jpg);
+		padding: 0 0 0 0;
+	}
+	#section5{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/6.jpg);
+		background-color: #f1f1f1 !important;
+		padding: 0 0 0 0;
+	}
+	#section6{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/7.jpg);
+		padding: 0 0 0 0;
+	}
+	#section7{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/8.jpg);
+		padding: 0 0 0 0;
+	}
+
+	#section8{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/9.jpg);
+		padding: 0 0 0 0;
+	}
+	#section9{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/10.jpg);
+		
+		padding: 0 0 0 0;
+	}
+	#section10{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/11.jpg);
+		padding: 0 0 0 0;
+	}
+	#section11{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/12.jpg);
+		padding: 0 0 0 0;
+	}
+	#section12{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/13.jpg);
+		padding: 0 0 0 0;
+	}
+	#section13{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/14.jpg);
+		background-color: black !important;
+		padding: 0 0 0 0;
+	}
+	#section14{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/15.jpg);
+		background-color: black !important;
+		padding: 0 0 0 0;
+	}
+	#section15{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/16.jpg);
+		background-color: black !important;
+		padding: 0 0 0 0;
+	}
+	#section16{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/17.jpg);
+		background-color: black !important;
+		padding: 0 0 0 0;
+	}
+	#section17{
+		background-image: url(https://storage.cloud.google.com/ksf-story-assets/exodus/imgs/18.jpg);
+		background-color: black !important;
+		padding: 0 0 0 0;
+	}
+	#section18{
+		background-color: black !important;
+		padding: 0 0 0 0;
+	}
+	#section18 p{
+		position: relative;
+		font-weight: 100;
+		color: white;
+		text-align: left;
+		text-size: 0.5em;
+		padding:0px 50px 20px 50px;
+	}
+
+	@media only screen and (max-width: 500px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    h1, p { font-size: 2em; }
+    .maintitle h1{
+		font-size: 3em;
+		font-family: "DuplexSans";
+		font-weight: bold;
+		/*background-color: rgba(0, 0, 0, 0.1);*/
+		top: 60%;
+		padding:20px 20px 20px 50px;
+	}
+
+}
+
+	#fp-nav {
+		background-color:rgba(255, 255, 255, 0.25);
+		border-radius: 50px;
+	}
+	
+	.fp-slidesNav.bottom {
+		background-color:rgba(255, 255, 255, 0.25);
+		border-radius: 50px;
+	}
+	
+	#fp-nav ul li a span, .fp-slidesNav ul li a span {
+		background: orange;
+		box-shadow: #000000;
+	}
+
+	.turndevice {
+		display: none;
+		position: absolute;
+		z-index: 100;
+		background-color: orange;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding-top: 50%;
+	}
+	
+	.turndevice img {
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+	}
+	
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.0rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
+	font-size: 24px;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 2.6rem;
+	margin: -1.3rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+.icon-button .fa-twitter {
+	color: #4099ff;
+}
+.icon-button .fa-facebook {
+	color: #3B5998;
+}
+.icon-button .icon-google-plus {
+	color: #db5a3c;
+}
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .icon-google-plus {
+	color: white;
+}
+
+.socialbuttons {
+	position: fixed;
+	right: 0px;
+	z-index: 100;
+	padding: 10px 10px; 0 0;
+}
+
+.fp-controlArrow.fp-next{
+	margin-right: 50px;
+	border-left-color: orange;
+}
+
+.fp-controlArrow.fp-prev{
+	border-right-color: orange;
+}
