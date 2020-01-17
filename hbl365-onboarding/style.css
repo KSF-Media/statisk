@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'DuplexSans';
+  src: url(./fonts/DuplexSans-Regular.otf);
+}
+@font-face {
+  font-family: 'DuplexSerif';
+  src: url(./fonts/DuplexSerif-Regular.otf);
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #e2833e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper {
+  text-align: center;
+  padding: 15px;
+}
+
+#logos {
+  width: 20vw;
+  max-width: 300px;
+  margin-bottom: 2.5rem;
+}
+h1 {
+  font-family: 'DuplexSerif';
+  margin-bottom: 2.5rem;
+}
+p {
+  font-size: 1rem;
+  font-family: 'DuplexSans';
+}
+
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.125rem;
+    font-family: 'DuplexSans';
+  }
+}
