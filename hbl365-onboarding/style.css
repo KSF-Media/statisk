@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   line-height: .9rem;
+  min-width: 320px;
 }
 #wrapper {
   text-align: center;
@@ -33,9 +34,15 @@ h1 {
   margin-bottom: 2.5rem;
   line-height: 2.5rem;
 }
-p {
+p, li {
   font-size: .875rem;
   font-family: 'DuplexSans';
+}
+ul{
+  text-align: left;
+}
+li {
+  margin-bottom: .75rem;
 }
 
 
