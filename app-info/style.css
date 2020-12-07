@@ -1,0 +1,64 @@
+@font-face {
+font-family: 'DuplexSans';
+src: url(./fonts/DuplexSans-Regular.otf);
+}
+@font-face {
+font-family: 'DuplexSerif';
+src: url(./fonts/DuplexSerif-Regular.otf);
+}
+html {
+height: 100%;
+}
+body {
+margin: 0;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: .9rem;
+min-width: 320px;
+}
+
+#hbl {
+    background: #e2833e;
+}
+
+#vn {
+    background: #e43232;
+}
+
+#on {
+    background: #518196;
+}
+
+#wrapper {
+text-align: center;
+padding: 15px;
+}
+
+#logos {
+width: 20vw;
+max-width: 100px;
+}
+h1 {
+font-family: 'DuplexSerif';
+line-height: 2.5rem;
+}
+p, li {
+font-size: .875rem;
+font-family: 'DuplexSans';
+}
+ul{
+text-align: left;
+}
+li {
+margin-bottom: .75rem;
+}
+
+
+@media screen and (min-width: 768px) {
+p {
+    font-size: 1rem;
+    font-family: 'DuplexSans';
+}
+}
